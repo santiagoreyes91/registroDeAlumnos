@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icono-reg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registro de Alumnos</title>
+</head>
+<body>
+
+    <main>
+        <h2 class="title-registro">Registro de alumnos</h2>
+        <h5 class="show-info">Usuario registrado: <span id="user-logueado"></span></h5>
+
+        <button id="log-out">Cerrar sesión</button>
+        <hr>
+        
+        <div id="formulario-alumnos">
+            <p>Ingrese los alumnos de su curso, las notas y la materia que cursa cada uno.</p>
+
+            <input type="text" id="nombre-alumno" name="nombre-alumno" placeholder="Ingrese nombre de alumno" required>
+            <br>
+            <input type="number" id="nota" name="nota" placeholder="Ingrese nota del alumno" required>
+            <br>
+            <input type="text" id="materia" name="materia" placeholder="Ingrese materia (Ej: inglés)" required>
+                
+            <br>
+            <button type="submit" id="agregar-alumno">Agregar alumno</button>
+            <button type="button" id="undo">Deshacer</button>
+            <br>
+            
+            <h3 class="sub-title" id="listado-title">Listado de alumnos: <span id="aviso">[vacío]</span></h3>
+
+            <ul id="listado-alumnos">
+
+            </ul>
+            
+        </div>
+        <hr>
+
+        <div>
+            <button id="calcular-promedio">Calcular promedio</button>
+            <h4 class="sub-title">Promedio de Notas: </h4>
+            <p id="mostrar-promedio"></p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./login.js"></script>
+    <script src="./alumnos.js"></script>
+</body>
+</html>

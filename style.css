@@ -1,0 +1,47 @@
+body{
+    background-color: #555;
+    color: white;
+}
+
+.title-registro{
+    color: gold;
+}
+
+.sub-title{
+    color: black;
+}
+
+.show-info{
+    color: greenyellow;
+}
+
+#user-logueado{
+    color: white;
+}
+
+#error{
+    color: red;
+}
+
+#boton-eliminar{
+    font-style: bold;
+    font-size: 10px;
+    background-color: rgb(153, 16, 16);
+    color: white;
+    box-sizing: 2px 2px rgb(158, 158, 158);
+    margin: 0.5mm;
+}
+
+#agregar-alumno{
+    background-color: rgb(13, 151, 13);
+    color: white;
+}
+
+#undo{
+    background-color: rgb(167, 143, 38);
+    color: white;
+}
+
+#listado-alumnos{
+    list-style-type: none;
+}
